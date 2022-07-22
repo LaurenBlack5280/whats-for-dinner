@@ -9,15 +9,18 @@
     </header>
       <main class="container">
         <img class="dinner-friends">
-        <section class="card">
+        <section class="card" id="card-one">
           <h2>What are you looking for?*</h2>
           <form class="form" id="form">
             <div>
-              <input type="radio" id="side" name="food-choice" >
+              <input class="radio" type="radio" id="side" name="food-choice"
+              value="side">
               <label for="side">Side</label>
-              <input type="radio" id="main" name="food-choice">
+              <input class="radio" type="radio" id="main" name="food-choice"
+              value="main">
               <label for="main">Main</label>
-              <input type="radio" id="main" name="food-choice" >
+              <input class="radio" type="radio" id="dessert" name="food-choice"
+              value="dessert">
               <label for="dessert">Dessert</label>
             </div>
             <div>
@@ -25,9 +28,11 @@
             </div>
           </form>
         </section>
-        <section class="card">
-          <img class="cookpot" src="/Users/laurenblack/turing/mod1/whats-for-dinner/assets/cookpot.svg"
+        <section class="card" id="card-two">
+          <img class="cookpot" id="cookpot" src="/Users/laurenblack/turing/mod1/whats-for-dinner/assets/cookpot.svg"
           alt="a cookpot running over">
+          <img class="display-choice hidden" id="" src=""
+          alt="nothin' to see here">
         </section>
       </main>
   </body>
