@@ -11,11 +11,18 @@
         <img class="dinner-friends">
         <section class="card">
           <h2>What are you looking for?*</h2>
-          <form class="form">
-            <input class="radio">Side</input>
-            <input class="radio">Main Dish</input>
-            <input class="radio">Dessert</input>
-            <button>Let's Cook!</button>
+          <form class="form" id="form">
+            <div>
+              <input type="radio" id="side" name="food-choice" >
+              <label for="side">Side</label>
+              <input type="radio" id="main" name="food-choice">
+              <label for="main">Main</label>
+              <input type="radio" id="main" name="food-choice" >
+              <label for="dessert">Dessert</label>
+            </div>
+            <div>
+              <button class="button" id="button">Let's Cook!</button>
+            </div>
           </form>
         </section>
         <section class="card">
