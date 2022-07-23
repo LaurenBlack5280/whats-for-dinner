@@ -1,11 +1,19 @@
-.body{
-font-family: 'Roboto', sans-serif;
+*{
+  border: 1px solid teal;
+}
 
+body{
+font-family: 'Roboto', sans-serif;
+background-image: url("/Users/laurenblack/turing/mod1/whats-for-dinner/assets/burger-friends.jpg");
+background-size: cover;
+margin: 0;
+/* height: 100%;
+width: 100%; */
 }
 
 header{
-border: 3px magenta;
-background-color: #0fb9b1
+background-color: #0fb9b1;
+height: 10%;
 }
 
 h1{
@@ -13,18 +21,17 @@ h1{
 }
 
 .container{
-border: 20px blue;
-background-image: url("/Users/laurenblack/turing/mod1/whats-for-dinner/assets/burger-friends.jpg");
-
+  height: 50%;
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-around;
 }
 
-.dinner-friends {
-border: 3px red;
-}
 
 .card{
-border: black;
-background: rgba(225, 225, 225, .9)
+  border: 1px solid magenta;
+  width: 30%;
+  background: rgba(225, 225, 225, .9);
 }
 
 h2{
@@ -40,11 +47,15 @@ h2{
 }
 
 button{
-border: 3px green;
+
 }
 
 .cookpot{
+  width: 30%;
+}
 
+.hidden{
+display: none;
 }
 
 
