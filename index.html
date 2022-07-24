@@ -8,35 +8,35 @@
     <h1>What's for Dinner?</h1>
     </header>
       <main class="container">
-        <section class="card" id="card-one">
+        <article class="card" id="card-one">
           <h2>What are you looking for?*</h2>
           <form class="form" id="form">
             <div>
               <input class="radio" type="radio" id="side" name="food-choice"
-              value="side">
+              value="sides">
               <label for="side">Side</label>
               <input class="radio" type="radio" id="main" name="food-choice"
-              value="main">
-              <label for="main">Main</label>
+              value="mains">
+              <label for="main">Main Dish</label>
               <input class="radio" type="radio" id="dessert" name="food-choice"
-              value="dessert">
+              value="desserts">
               <label for="dessert">Dessert</label>
             </div>
             <div>
               <button class="button" id="button">Let's Cook!</button>
             </div>
           </form>
-        </section>
-        <section class="card" id="card-two">
-          <article>
+        </article>
+        <article class="card" id="card-two">
+          <section class="main-view">
             <img class="cookpot" id="cookpot" src="/Users/laurenblack/turing/mod1/whats-for-dinner/assets/cookpot.svg"
             alt="a cookpot running over">
-          </article>
-          <article class="hidden">
+          </section>
+          <section class="option hidden">
             <h3>You should make: </h3>
-            <p class="paragraph"></p>
-          </article>
-        </section>
+            <p class="paragraph">Anything</p>
+          </section>
+        </article>
       </main>
   </body>
   <script type="text/javascript" src="main.js"></script>

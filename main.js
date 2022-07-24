@@ -1,11 +1,13 @@
 /* QUERYSELECTORS */
 var radioButtons = document.querySelectorAll('input[name="food-choice"]')
-// var sideButton = document.querySelector('#side')
-// var mainButton = document.querySelector('#main')
-// var dessertButton = document.querySelector('#dessert')
+var sideButton = document.querySelector('#side')
+var mainButton = document.querySelector('#main')
+var dessertButton = document.querySelector('#dessert')
 var submitButton = document.querySelector('#button')
 //var cardTwo = document.querySelector('#card-two')
+var mainView = document.querySelector('.main-view')
 var cookpot = document.querySelector('.cookpot')
+var option = document.querySelector('.option')
 var paragraph = document.querySelector('.paragraph')
 
 /*  DATA */
@@ -33,7 +35,7 @@ var mains = [
 'Butternut Squash Soup',
 'BBQ Chicken Burgers',
 'Ramen',
-'Empanadas,'
+'Empanadas',
 'Chicken Fried Rice',
 'Sheet Pan Fajitas',
 'Margarita Pizza'
@@ -61,44 +63,33 @@ var desserts = [
 ]
 
 /* EVENTLISTENERS */
-submitButton.addEventListener('click', )
+submitButton.addEventListener('click', displayChoice)
 
 /* EVENTHANDLERS */
 
-    /*  FIND USER INPUT */
-function findCheckedOption() {
-  for(var i = 0; i < radioButtons.length; i ++) {
-    if (radioButtons[i].checked) {
-      radioButtons[i].checked = radioButtons[i].value
-      var checkedOption = radioButtons[i].value
-    }
-  }
+function getRandomIndex(array) {
+  return Math.floor(Math.random() * array.length);
 }
-    /* CHANGE OUTPUT */
-// on click, change display
-// - hide cookpot: change image class to remove hidden(innertext/html)
 
 function hideCookpot() {
-cookpot.classList.add(hidden)
+mainView.classList.add('hidden')
 }
 
-function unhideArticle() {
-paragraph.classList.remove(hidden)
+function unhideSection() {
+option.classList.remove('hidden')
 }
-
-var randomOption = array[Math.floor(Math.random() * array.length)];
-
 
 function displayChoice() {
-for(var i = 0; i < sides.length; i ++) {
-  if(side.checked) {
-    sides[i]getrandomindexfunction = sides[i].value
-    var selectedSide = sides[i].value
-    paragraph.innertext = `${selectedSide}`
-  }
+  event.preventDefault()
+  hideCookpot()
+  unhideSection()
+      if(sideButton.checked) {
+        paragraph.innerText = sides[getRandomIndex(sides)]
+      }
+      if(mainButton.checked) {
+          paragraph.innerText = mains[getRandomIndex(mains)]
+      }
+      if(dessertButton.checked) {
+          paragraph.innerText = desserts[getRandomIndex(desserts)]
+    }
 }
-}
-// - display meal option: change div class to add hidden to innerHTML/innertext
-//                        change id to match item on list of chosen options
-//                        create array of options -iterate over array at random
-//                        interpolate values from list
