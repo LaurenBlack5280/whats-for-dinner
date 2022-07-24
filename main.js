@@ -1,5 +1,5 @@
 /* QUERYSELECTORS */
-var radioButtons = document.querySelectorAll('input[name="food-choice"]')
+//var radioButtons = document.querySelectorAll('input[name="food-choice"]')
 var sideButton = document.querySelector('#side')
 var mainButton = document.querySelector('#main')
 var dessertButton = document.querySelector('#dessert')
