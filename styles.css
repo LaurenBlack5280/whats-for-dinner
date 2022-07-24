@@ -52,6 +52,7 @@ h2{
 
 button{
   background-color: teal;
+  border-radius: 5px
 }
 
 .hidden{
@@ -59,21 +60,19 @@ button{
 }
 
 .main-view{
+ display: flex;
+ justify-content: space-around;
+}
 
+#card-two {
+ display: flex;
 }
 
 .cookpot{
   width: 30%;
 }
 
-
-
-/*font-family: 'Roboto', sans-serif;
-
-
-COLORS
-teal - #0fb9b1;
-frosted white - rgba(225, 225, 225, .9);
+/* COLORS
 grey - #95a5a6;
 red - #ee5253
 
