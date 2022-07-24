@@ -1,17 +1,14 @@
 /* QUERYSELECTORS */
-var radioButtons = document.querySelectorAll('input[name="food-choice"]')
 var sideButton = document.querySelector('#side')
 var mainButton = document.querySelector('#main')
 var dessertButton = document.querySelector('#dessert')
 var submitButton = document.querySelector('#button')
-//var cardTwo = document.querySelector('#card-two')
 var mainView = document.querySelector('.main-view')
 var cookpot = document.querySelector('.cookpot')
 var option = document.querySelector('.option')
 var paragraph = document.querySelector('.paragraph')
 
 /*  DATA */
-
 var sides = [
 'Miso Glazed Carrots',
 'Coleslaw',
@@ -66,17 +63,16 @@ var desserts = [
 submitButton.addEventListener('click', displayChoice)
 
 /* EVENTHANDLERS */
-
 function getRandomIndex(array) {
   return Math.floor(Math.random() * array.length);
 }
 
 function hideCookpot() {
-mainView.classList.add('hidden')
+  mainView.classList.add('hidden')
 }
 
 function unhideSection() {
-option.classList.remove('hidden')
+  option.classList.remove('hidden')
 }
 
 function displayChoice() {
