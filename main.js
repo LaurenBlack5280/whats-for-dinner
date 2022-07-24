@@ -72,11 +72,11 @@ function getRandomIndex(array) {
 }
 
 function hideCookpot() {
-mainView.classList.add('hidden')
+  mainView.classList.add('hidden')
 }
 
 function unhideSection() {
-option.classList.remove('hidden')
+  option.classList.remove('hidden')
 }
 
 function displayChoice() {
